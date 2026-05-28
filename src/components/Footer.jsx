@@ -13,16 +13,16 @@ import '../styles/Footer.css';
 
 const contactos = [
   {
-    text: '+51 999 888 777',
+    text: '+51 901 329 855',
     action: () => {
       window.open('https://wa.me/51999888777', '_blank');
     }
   },
 
   {
-    text: 'soporte@vendefacil.pe',
+    text: 'andrebryamzapatavega@gmail.com',
     action: () => {
-      window.location.href = 'mailto:soporte@vendefacil.pe';
+      window.location.href = 'mailto:andrebryamzapatavega@gmail.com';
     }
   },
 
