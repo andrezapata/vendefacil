@@ -1,0 +1,160 @@
+.vf-beneficios{
+  width:100%;
+  padding:120px 8%;
+}
+
+.vf-beneficios-header{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.vf-badge{
+  background:rgba(37,99,235,.15);
+  color:#60a5fa;
+
+  padding:10px 20px;
+
+  border-radius:40px;
+
+  font-size:.8rem;
+
+  font-weight:700;
+
+  letter-spacing:2px;
+}
+
+.vf-beneficios-header h2{
+  font-size:3.5rem;
+
+  margin-top:24px;
+
+  font-weight:800;
+
+  max-width:850px;
+
+  margin-inline:auto;
+
+  line-height:1.1;
+}
+
+.vf-beneficios-header p{
+  color:#94a3b8;
+
+  margin-top:20px;
+
+  max-width:700px;
+
+  margin-inline:auto;
+
+  line-height:1.8;
+}
+
+.vf-beneficios-inner{
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:30px;
+}
+
+.vf-beneficio-card{
+  background:linear-gradient(
+    180deg,
+    rgba(17,24,39,.96),
+    rgba(15,23,42,.96)
+  );
+
+  padding:40px;
+
+  border-radius:30px;
+
+  transition:.4s;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.vf-beneficio-card::before{
+  content:'';
+
+  position:absolute;
+
+  width:200px;
+  height:200px;
+
+  background:rgba(255,255,255,.03);
+
+  border-radius:50%;
+
+  top:-100px;
+  right:-100px;
+}
+
+.vf-beneficio-card:hover{
+  transform:translateY(-10px);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.35),
+    0 0 25px rgba(37,99,235,.08);
+}
+
+.vf-beneficio-icon{
+  width:70px;
+  height:70px;
+
+  border-radius:22px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:28px;
+}
+
+.vf-beneficio-title{
+  font-size:1.5rem;
+  font-weight:800;
+}
+
+.vf-beneficio-desc{
+  color:#94a3b8;
+
+  line-height:1.8;
+
+  margin-top:15px;
+}
+
+.vf-beneficio-btn{
+  margin-top:28px;
+
+  padding:14px 22px;
+
+  border:none;
+
+  border-radius:16px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  font-weight:700;
+
+  transition:.3s;
+}
+
+.vf-beneficio-btn:hover{
+  transform:translateX(6px);
+}
+
+@media(max-width:1000px){
+
+  .vf-beneficios-inner{
+    grid-template-columns:1fr;
+  }
+
+  .vf-beneficios-header h2{
+    font-size:2.5rem;
+  }
+
+}
