@@ -17,7 +17,6 @@ export default function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const [cartCount] = useState(3);
 
   useEffect(() => {
 
@@ -146,9 +145,6 @@ export default function Navbar() {
 
 
 
-            <span className="vf-cart-badge">
-              {cartCount}
-            </span>
 
           </div>
 
